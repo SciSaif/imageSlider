@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: url('t9.jpg')center/cover no-repeat;
+
+}
+.images {
+    /* background: yellow; */
+    flex: 0  0 80%;
+    min-height: 70vh;
+    background: url('n1.jpg')center/cover no-repeat;
+    border-radius: 15px;
+    box-shadow: 5px 10px black;
+    position: relative;
+}
+.btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    border: 3px solid rgb(187, 100, 100);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    box-shadow: 2px 3px black;
+    outline: none;
+}
+.prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%); /*moves the button 50% left of its width, and 50% up of its height*/
+}
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+.btn:active {
+    background: grey;
+    box-shadow: 1px 1px grey;
+}
+.btn:hover {
+    background: rgba(168, 238, 243, 0.568);
+    border: 3px solid rgba(9, 44, 90, 0.452);
+    color: white;
+}
+
+
+
+
